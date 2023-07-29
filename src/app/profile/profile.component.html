@@ -28,14 +28,12 @@
                     <!-- Verificar si user.imageUrl existe y no está vacío antes de mostrar la imagen -->
                     <div *ngIf="user.imageUrl">
                         <!-- Muestra la imagen almacenada en la propiedad imageUrl -->
-                        <img [src]="user.imageUrl" width="200px" height="200px" class="rounded-circle img-thumbnail"
+                        <img [src]="user.imageUrl" width="200px" height="200px" class="rounded-circle "
                             alt="Profile Image">
                     </div>
-                    <div *ngIf="!showPhoto">
-                        <!-- Muestra el input para seleccionar una imagen -->
-                        <input type="file" (change)="onFileSelected($event)">
-                        <button (click)="uploadImage()">Upload Image</button>
-                    </div>
+                    <!-- Muestra el input para seleccionar una imagen siempre -->
+                    <input type="file" (change)="onFileSelected($event)">
+                    <!-- <button (click)="uploadImage()">Upload Image</button> -->
                 </div>
             </div>
         </div>
