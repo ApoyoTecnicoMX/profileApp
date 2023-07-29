@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AmplifyAuthenticatorModule } from '@aws-amplify/ui-angular';
 
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
+// import { MDBBootstrapModule } from 'angular-bootstrap-md';
 // import { AmplifyService } from "aws-amplify-angular";
 // import { AmplifyAngularModule, AmplifyService } from 'aws-amplify-angular';
 
@@ -26,7 +26,7 @@ import { FormsModule } from '@angular/forms'
     BrowserModule,
     AppRoutingModule,
     AmplifyAuthenticatorModule,
-    MDBBootstrapModule,
+    // MDBBootstrapModule,
     FormsModule
   ],
   providers: [],
